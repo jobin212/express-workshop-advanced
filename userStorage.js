@@ -1,4 +1,4 @@
-var data = {
+  var data = {
   jason: {
     name: 'jason',
     age: 43,
@@ -37,6 +37,10 @@ module.exports = {
   },
 
   createUser: function(name, age, salary) {
-    data[name] = { age: age, salary: salary};
+    data[name] = { name: name, age: age, salary: salary};
+  },
+
+  deleteUser: function(name) {
+    delete data[name];
   }
 };
